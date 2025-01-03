@@ -7,7 +7,7 @@ def display():
     if destination:
         st.write(f"Fetching weather and travel updates for {destination}...")
         try:
-            response = requests.get(f"https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q={destination}")
+            response = requests.get(f"https://api.weatherapi.com/v1/current.json?key=ddc8a067f81044489d744116250301&q={destination}")
             if response.status_code == 200:
                 weather = response.json()["current"]["condition"]["text"]
                 st.success(f"Current weather in {destination}: {weather}")
