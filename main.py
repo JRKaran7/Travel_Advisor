@@ -1,10 +1,10 @@
+### File: main.py
 import streamlit as st
-from streamlit_option_menu import option_menu
 
 # Sidebar navigation
 st.sidebar.title("AI Travel Advisor")
 menu_options = ["Home", "Plan Your Trip", "Group Travel", "Trivia", "Cultural Insights", "Blog"]
-choice = st.sidebar.selectbox("Navigate", menu_options)
+choice = st.sidebar.radio("Navigate", menu_options)
 
 if choice == "Home":
     import home
